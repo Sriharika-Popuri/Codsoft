@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyLife - Diet Plan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+
+        .header {
+            background-image: url('12.avif');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            color: rgb(240, 237, 237);
+            text-shadow: 2px 2px 4px rgba(12, 11, 11, 0.5);
+            font-size: 5em;
+            text-align: top;
+            position: relative;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: cover;
+            padding: 15px;
+            width: 100%;
+        }
+
+        .content {
+            display: flex;
+            background-color: rgba(55, 54, 54, 0.9);
+            padding: 10px;
+            border-radius: 10px;
+            width: 60%;
+            max-width: 1200px;
+            position: relative;
+            top: -25vh; /* Adjust this value to control the overlap */
+        }
+
+        .left-image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px; /* Reduce space between the left image and form */
+        }
+
+        .left-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            width: 100%; /* Fill the left side */
+        }
+
+        .form-container {
+            flex: 2;
+            padding: 10px; /* Reduce padding */
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 5px; /* Reduce margin between heading and form */
+            color: #333;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container input, .form-container textarea {
+            margin-bottom: 10px; /* Reduce margin between inputs */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            padding: 10px; /* Reduce padding of button */
+            border: none;
+            border-radius: 5px;
+            background-color: #ff9900;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #e68a00;
+        }
+
+        .features, .testimonials {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            background-color: grey;
+        }
+
+        .features .grid {
+            background-image: url('i2.jpg'); /* Add your specific image URL here */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .testimonials .grid {
+            background-image: url('header-img-foods-to-include-in-daily-routine.jpg'); /* Add your specific image URL here */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .features .box, .testimonials .box {
+            background-color: rgba(0, 0, 0, 0.6);
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1;
+            max-width: 300px;
+            text-align: left;
+        }
+
+        .testimonials .box p {
+            font-style: italic;
+        }
+    </style>
+    <script>
+        function submitForm() {
+            alert('Form submitted!');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div>HealthyLife Diet Plan</div>
+        
+    </div>
+
+    <div class="main-container">
+        <div class="content">
+            <div class="left-image">
+                <img src="images.jpeg" alt="Healthy Food">
+            </div>
+            <div class="form-container">
+                <h1>Join Our Diet Plan</h1>
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Your Name Here" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email Here" required>
+                    <input type="text" id="phone" name="phone" placeholder="Your Phone Number Here" required>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Goals or Questions"></textarea>
+                    <button type="button" onclick="submitForm()">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <h2>Why Choose Our Diet Plan?</h2>
+        <div class="grid">
+            <div class="box">
+                <h3>Personalized Plans</h3>
+                <p>Get a diet plan tailored specifically to your needs and preferences.</p>
+            </div>
+            <div class="box">
+                <h3>Expert Guidance</h3>
+                <p>Work with experienced nutritionists who will guide you every step of the way.</p>
+            </div>
+            <div class="box">
+                <h3>Community Support</h3>
+                <p>Join a community of like-minded individuals who will support and motivate you.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="grid">
+            <div class="box">
+                <p>"This diet plan changed my life! I've never felt healthier."</p>
+                <p>- Ramesh</p>
+            </div>
+            <div class="box">
+                <p>"The personalized approach and expert advice were exactly what I needed."</p>
+                <p>- Sujatha</p>
+            </div>
+            <div class="box">
+                <p>"I love being part of a supportive community. It makes all the difference."</p>
+                <p>- Anil</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
